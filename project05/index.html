@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elenent</title>
+</head>
+<body>
+    <h1>Form Elenent</h1>
+    <form>
+        <label for="username">user name</label>
+        <input type="text" id="username" name="username"  value="guest">
+        <label for="password">password</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="ok">
+    </form>
+    <hr>
+    <h1>Type : Radio</h1>
+    <form>
+        <input type="radio" id="html" name="subject"  value="html">
+        <label for="HTML">HTML</label>
+        <input type="radio" id="css" name="subject"  value="css">
+        <label for="css">CSS</label>
+        <input type="radio" id="js" name="subject"  value="js"> 
+        <label for="js">Javascript</label>
+        <input type="submit">
+    </form>
+    <hr>
+    <h1>Type : Checkbox</h1>
+    <form>
+        <input type="checkbox" id="html" name="selected" value="html">
+        <label for="HTML">HTML</label>
+        <input type="checkbox" id="css" >
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js" name="status" checked> 
+        <label for="js">Javascript</label>
+        <input type="submit">
+    </form>
+    <hr>
+    <h1>section-option and textarea</h1>
+    <form>
+        <section id="subject" name="register" > 
+            <option disabled selected>Please select</option>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>Javascript</option>
+        </section>
+    </form>
+        <textarea name="notes" id="" cols="30" rows="10"></textarea>
+        <button>OK</button>
+        <!-- <input type="submit"> -->
+    
+</body>
+</html>

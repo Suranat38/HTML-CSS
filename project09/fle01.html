@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Layout</title>
+  <style>
+    header {
+      background-color: salmon;
+      padding: 10px;
+      display:flex;
+      justify-content: space-between;
+    }
+    .logo {
+      background-color: aqua;
+    }
+    nav {
+      background-color: bisque;
+    }
+    main {
+        display: flex;
+        gap: 8px;
+        justify-content: space-around;
+    }
+
+    .card {
+        float: left;
+        margin: 8px;
+      text-align: center;
+      border: dashed;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Logo</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Service</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="card">
+      <img src="https://picsum.photos/250" alt="test">
+      <h3>Nice pic</h3>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/250" alt="test">
+      <h3>Nice pic</h3>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/250" alt="test">
+      <h3>Nice pic</h3>
+    </div>
+  </main>
+
+</body>
+</html>
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Responsive</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            max-width: 1200px;
+            margin: auto;
+        }
+        header {
+            min-height: 100px;
+            background-color: tomato;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .logo{
+            align-self: center;
+            border: 1px solid rgb(112, 11, 107) ;
+        }
+        .logo:hover {
+            background-color: rgb(114, 212, 22);
+            color: blue;
+        }
+        nav {
+            display: flex;
+            gap: 8px;
+            background-color: aliceblue;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+        nav a {
+            display: block;
+            text-decoration: none;
+            padding: 8px;
+            background-color: rgb(40, 240, 140);
+        }
+        @media(max-width: 1000px) {
+            header {
+                justify-content: space-around;
+            }
+            nav {
+                flex-basis: 50%;
+                justify-content: space-between;
+            }
+        }
+        @media(max-width: 800px) {
+            .logo{
+                display: none;
+            }
+            nav {
+                flex-grow: 1;
+                justify-content: space-around;
+            }
+        }
+        @media(max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>CSS Responsive</h1>
+    <hr>
+    <header>
+        <h1 class="logo">LOGO</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+</body>
+</html>

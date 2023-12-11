@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(31, 216, 176);
+    border: 2px dashed rgb(216, 27, 233);
+   
+}
+.container {
+    background-color: blueviolet;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    margin: auto;
+    padding-block: 15px;
+    padding-inline: 20px;
+    width: 50%;
+    /* min-width: 500px; */
+    /* border-radius: 50%; */
+    border-top-left-radius: 50% ;
+    border-top-right-radius: 50% ;
+    box-shadow: -43px -2px 117px 111px rgba(3, 1, 14, 0.75);
+-webkit-box-shadow: -43px -2px 117px 111px  rgba(65, 22, 218, 0.75);
+-moz-box-shadow: -43px -2px 117px 111px rgba(0,0,0,0.75);
+}
+.item {
+    border: 2px dashed Lime;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}

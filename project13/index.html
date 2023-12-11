@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            min-height: 200vh;
+        }
+        .container {
+            background-color: aqua;
+            min-height: 400px;
+            width: 80%;
+            margin: auto;
+            position: relative;
+        }
+        .item {
+            border: 1px dashed red;
+            position: absolute;    
+            padding: 8px;  
+            background-color: brown;
+            top: 100px;
+            left: -20px;  
+        }
+        h2 {
+            position: sticky;
+            top: 200px;
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Position</h1>
+    <div class="container">
+        <h3>GOOD 05</h3>
+        <div class="item">ITEM</div>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates est obcaecati aliquid, itaque incidunt laborum nam, saepe exercitationem, sint rerum ratione in. Vel, error magnam. Dolore nesciunt deleniti inventore est.</p> -->
+    </div>
+    <h2>Codecaddf</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nostrum qui laboriosam dolorum, sapiente temporibus culpa fugit? Amet sint eveniet quasi, qui, reprehenderit nisi sequi voluptates nulla itaque, eligendi obcaecati!</p>
+</body>
+</html>
